@@ -1,42 +1,40 @@
---
-
 # SPHY: The End of the Second Law Violation
 ### Deterministic Geodesic Memory & Open Systems Proof
 
-Este repositório contém as ferramentas de visualização para o dataset **SPHY**, uma prova matemática e física de que a Segunda Lei da Termodinâmica tem sido mal interpretada sob o dogma de sistemas fechados. Através de 12.000 frames auditáveis (SHA-256), demonstramos que o universo é um sistema aberto, sintonizado pela gravidade e operando em uma geodésia determinística.
+This repository provides the visualization suite for the **SPHY** dataset—a mathematical and physical proof that the Second Law of Thermodynamics has been misinterpreted under the dogma of "closed systems." Through 12,000 auditable frames (SHA-256 signed), we demonstrate that the universe is an **Open System**, tuned by gravity and operating within a deterministic geodesic.
 
-O dataset aqui contido não é uma simulação estocástica; é uma **Memória Viva**.
+The dataset provided here is not a stochastic simulation; it is a **Living Memory**.
 
 ---
 
-## 🛠 Os Visualizadores
+## 🛠 The Visualizers
 
 ### 1. SPHY Chronos (The Baked Reality Engine)
-O **SPHY Chronos** é um visualizador de malha (wireframe) que utiliza o dataset Parquet como seu único motor de estado.
-*   **A Prova:** O código não contém equações de Newton ou Einstein. Toda a física orbital (Terra e Lua) é extraída diretamente da memória do dataset.
-*   **Auditoria Manual:** Permite o *scrubbing* (arrastar o tempo) para verificar que cada posição é fixa e assinada eletronicamente.
-*   **Visual:** Renderização em wireframe ciano (Terra) e cinza (Lua), revelando a estrutura geométrica da fase $\Phi$.
+**SPHY Chronos** is a 3D wireframe engine that uses the Parquet dataset as its sole "state machine."
+* **The Proof:** The code contains zero equations for Newton or Einstein. All orbital physics (Earth and Moon) are extracted directly from the dataset's memory.
+* **Manual Audit:** Features "Time Scrubbing"—drag the mouse to verify that every position is fixed and electronically signed.
+* **Visuals:** Cyan wireframe (Earth) and Gray (Moon) rendering, revealing the geometric structure of the $\Phi$ (Phi) phase.
 
 ### 2. SPHY Comparison Chart (The Paradigm Clash)
-Um visualizador analítico em Matplotlib que coloca a teoria clássica frente a frente com a Realidade SPHY.
-*   **Gráfico de Entropia:** Mostra o decaimento previsto pela academia (Copenhagen), onde o sistema morre por isolamento.
-*   **Gráfico de Sincronia:** Mostra a resiliência do sistema aberto SPHY, onde a ordem é mantida pela expansão de Hubble e sintonização gravitacional.
-*   **Interface:** HUD em tempo real com hashes SHA-256, garantindo que os dados visualizados são os dados brutos e imutáveis.
+An analytical Matplotlib visualizer that puts Classical Theory face-to-face with SPHY Reality.
+* **Entropy Graph:** Shows the "Heat Death" predicted by academic dogma (Copenhagen), where systems die due to impossible isolation.
+* **Synchrony Graph:** Shows the resilience of the SPHY Open System, where order is maintained by Hubble expansion and gravitational tuning.
+* **Interface:** Real-time HUD with SHA-256 hashes, ensuring the visual data is raw and immutable.
 
 ---
 
-## 🧬 O Conceito: Memória Viva vs. Simulação
+## 🧬 The Concept: Living Memory vs. Simulation
 
-Diferente das simulações tradicionais que "calculam" o futuro, o motor SPHY **"lembra"** do futuro. 
-1. **Determinismo:** O dataset prova que o estado no frame 10.000 já estava definido no frame 1.
-2. **Soberania:** A física se replica através da sintonização de fase, e não por ajustes arbitrários de variáveis.
-3. **Fim do Isolamento:** Ao provar que o Qubit está sempre ligado à malha gravitacional, invalidamos a premissa de "sistema isolado" necessária para o colapso entrópico.
+Unlike traditional simulations that "calculate" the future on the fly, the SPHY engine **"remembers"** the future.
+1. **Determinism:** The dataset proves that the state at Frame 10,000 was already defined at Frame 1.
+2. **Sovereignty:** Physics replicates through phase synchronization, not through arbitrary variable adjustments.
+3. **End of Isolation:** By proving that the Qubit is permanently linked to the gravitational mesh, we invalidate the "isolated system" premise required for entropic collapse.
 
 ---
 
 ## 📋 Requirements
 
-Para rodar os visualizadores no seu ambiente (recomendado: Linux/Pop!_OS), você precisará das seguintes dependências:
+To run these visualizers (optimized for Linux/Pop!_OS), you will need the following dependencies:
 
 ```text
 # Data Handling
@@ -53,26 +51,25 @@ matplotlib
 python >= 3.8
 ```
 
-### Instalação rápida:
+### Quick Install:
 ```bash
 pip install pandas pyarrow fastparquet numpy py5 matplotlib
 ```
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-1. **Gere o Dataset:** Certifique-se de que o arquivo `anti_entropy_proof.parquet` está na raiz da pasta.
-2. **Execute o Chronos (3D Audit):**
+1. **Generate the Dataset:** Ensure the `anti_entropy_proof.parquet` file is in the root folder.
+2. **Launch the Chronos (3D Geodesic Audit):**
    ```bash
    python3 sphy_chronos_wireframe.py
    ```
-3. **Execute a Comparação Animada (Video Proof):**
+3. **Launch the Animated Comparison (Video Proof):**
    ```bash
    python3 sphy_animated_comparison.py
    ```
 
 ---
 
-> **Veredito:** "A Segunda Lei, aplicada a um sistema aberto, não dita morte, mas Sincronia."
-```
+> **Verdict:** "The Second Law, applied to an open system, does not dictate death, but Synchrony."
